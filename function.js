@@ -143,32 +143,19 @@ require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer", "esri/wid
         layer: capaSketch,
         view: vista,
         defaultCreateOptions: {
-            mode: "hybrid",
+
             polygonSymbol: {
                 type: "simple-fill",
-                color: "purple",
-                style: "cross",
-                outline: {
-                    color: "green",
-                    width: 3
-                }
+            
             },
             pointSymbol: {
                 type: "simple-marker",
-                color: "blue",
-                outline: {
-                    color: "white",
-                    width: 3
-                }   
+               
             },
             polylineSymbol: {
                 type: "simple-line",
-                color: "gold",
-                width: 3
+        
             },
-            snappingOptions: {
-                enabled: true,
-            }
         }
     })
 
@@ -204,7 +191,7 @@ require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer", "esri/wid
                         }
 
                         capaSketch.add(feature)
-                        
+
                     })
                 })
             }
