@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Final APG</title>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/dark/main.css">
+    <script src="https://js.arcgis.com/4.28/"></script>
+
+    <script defer src="function.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #viewDiv {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #limpiarSeleccion {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 20px;
+            background-color: #231f23;
+            color: #d8d8d8;
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="viewDiv"></div>
+    <button id="limpiarSeleccion"><strong>Limpiar selección</strong></button>
+</body>
+</html>
