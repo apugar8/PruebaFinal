@@ -142,21 +142,28 @@ require(["esri/Map", "esri/views/MapView", "esri/layers/FeatureLayer", "esri/wid
     const sketch = new Sketch({
         layer: capaSketch,
         view: vista,
-        defaultCreateOptions: {
-
+        viewModel: new SketchViewModel({
+            view: vista,
+            layer: capaSketch,
             polygonSymbol: {
                 type: "simple-fill",
-            
+                color: [255, 0, 0, 0.5],
             },
+
             pointSymbol: {
                 type: "simple-marker",
-               
+                color: [255, 0, 0, 0.8],
             },
+
             polylineSymbol: {
                 type: "simple-line",
-        
+                color: [255, 0, 0, 0.8],
             },
-        }
+
+            snappingOptions: {  
+                enabled: true,
+            }
+        })
     })
 
     mapa.add(capaSketch);
